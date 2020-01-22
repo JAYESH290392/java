@@ -1,11 +1,428 @@
+
+
+1. Write a Java program to create a new array list, add some colors (string) and print out the collection.
+
 import java.util.*;
 public class colour {
 public static void main(String[] args){
 		ArrayList<String> list=  new ArrayList();
-		list.add("Black");
+		list.add("Blue");
 		list.add("Red");
 		list.add("White");
-		list.add("Blue");
+		list.add("Green");
 		System.out.println(list);
 		}
+}
+
+
+2.Write a Java program to iterate through all elements in a array list. 
+
+import java.util.*;
+public class Iteration {
+public static void main(String[] args) {
+  List<String> lst = new ArrayList<String>();
+  lst.add("Red");
+  lst.add("Green");
+  lst.add("Yellow");
+  lst.add("Blue");
+  lst.add("Black");
+  for (String element : lst) {
+    System.out.println(element);
+    }
+ }
+}
+
+3. Write a Java program to insert an element into the array list at the first position.
+
+import java.util.*;
+public class First{
+public static void main(String[] args) {
+  List<String> lstf = new ArrayList<String>();
+  lstf.add("Red");
+  lstf.add("Green");
+  lstf.add("Yellow");
+  lstf.add("Blue");
+  lstf.add("Black");
+  System.out.println(lstf);
+  lstf.add(0, "Pink");
+  lstf.add(3, "Yellow");
+  System.out.println(lstf);
+ }
+}
+
+4. Write a Java program to retrieve an element (at a specified index) from a given array list. 
+
+import java.util.*;
+public class Exercise4 {
+public static void main(String[] args) {
+List<String> lstindex = new ArrayList<String>();
+  lstindex.add("Red");
+  lstindex.add("Green");
+  lstindex.add("Orange");
+  lstindex.add("White");
+  lstindex.add("Black");
+  System.out.println(lstindex);
+  String element = lstindex.get(0);
+  System.out.println("First element: "+element);
+  element = lstindex.get(2);
+  System.out.println("Third element: "+element);
+ }
+}
+
+5. Write a Java program to update specific array element by given element. 
+
+import java.util.*;
+  public class usa {
+  public static void main(String[] args) {
+  List<String> usae = new ArrayList<String>();
+  usae.add("Blue");
+  usae.add("Green");
+  usae.add("Yellow");
+  usae.add("Red");
+  usae.add("Black");
+  System.out.println(usae);
+  usae.set(2, "White");
+  System.out.println(usae);
+ }
+}
+
+6. Write a Java program to remove the third element from a array list.
+
+import java.util.*;
+  public class teal {
+  public static void main(String[] args) {
+  List<String> lst = new ArrayList<String>();
+  lst.add("Red");
+  lst.add("Green");
+  lst.add("Yellow");
+  lst.add("Blue");
+  lst.add("Black");
+  System.out.println(lst);
+  lst.remove(2);
+  System.out.println("After removing third element from the list:\n"+lst);
+ }
+}
+
+7. Write a Java program to search an element in a array list
+
+import java.util.*;
+  public class se {
+  public static void main(String[] args) {
+  List<String> ls = new ArrayList<String>();
+  ls.add("Red");
+  ls.add("Green");
+  ls.add("Orange");
+  ls.add("White");
+  ls.add("Black");
+  if (ls.contains("Red")) {
+  System.out.println("Found the element");
+  } 
+  else 
+  {
+  System.out.println("There is no such element");
+    }
+ }
+}
+
+8. Write a Java program to sort a given array list.
+
+import java.util.*;
+  public class al {
+  public static void main(String[] args) {
+  List<String> arl = new ArrayList<String>();
+  arl.add("Red");
+  arl.add("Blue");
+  arl.add("Green");
+  arl.add("Yellow");
+  arl.add("White");
+  System.out.println("List before sort: "+arl);
+  Collections.sort(arl);
+  System.out.println("List after sort: "+arl);    
+ }
+}
+
+9. Write a Java program to copy one array list into another. 
+
+import java.util.*;
+  public class ola {
+  public static void main(String[] args) {
+  List<String> ls = new ArrayList<String>();
+  ls.add("1");
+  ls.add("2");
+  ls.add("3");
+  ls.add("4");
+  System.out.println("ls: " + ls);
+  List<String> ls1 = new ArrayList<String>();
+  ls1.add("A");
+  ls1.add("B");
+  ls1.add("C");
+  ls1.add("D");
+  System.out.println("ls1: " + ls1);
+  Collections.copy(ls, ls1);
+  System.out.println("Copy ls to ls1,\nAfter copy:");
+  System.out.println("ls: " + ls);
+  System.out.println("ls1: " + ls1);
+ }
+}
+
+10. Write a Java program to shuffle elements in a array list.
+
+import java.util.*;
+  public class se {
+  public static void main(String[] args) {
+  List<String> lse = new ArrayList<String>();
+  lse.add("Red");
+  lse.add("Green");
+  lse.add("Yellow");
+  lse.add("Blue");
+  lse.add("Black");
+  System.out.println("List before shuffling:\n" + lse);  
+  Collections.shuffle(lse);
+  System.out.println("List after shuffling:\n" + lse); 
+ }
+}
+
+11. Write a Java program to reverse elements in a array list.
+
+import java.util.*;
+  public class re {
+  public static void main(String[] args) {
+  List<String> lre = new ArrayList<String>();
+  lre.add("Red");
+  lre.add("Green");
+  lre.add("Blue");
+  lre.add("Yellow");
+  lre.add("Black");
+  System.out.println("List before reversing :\n" + lre);  
+  Collections.reverse(lre);
+  System.out.println("List after reversing :\n" + lre); 
+ }
+}
+
+12. Write a Java program to extract a portion of a array list. 
+
+import java.util.*;
+  public class ep {
+  public static void main(String[] args) {
+  List<String> epl = new ArrayList<String>();
+  epl.add("Red");
+  epl.add("Green");
+  epl.add("Blue");
+  epl.add("Yellow");
+  epl.add("Black");
+  System.out.println("Original list: " + epl);
+  List<String> epl1 = epl.subList(0, 3);
+  System.out.println("List of first three elements: " + epl1);
+ }
+}
+
+13. Write a Java program to compare two array lists.
+
+import java.util.*;
+  public class cal {
+  public static void main(String[] args) {
+   ArrayList<String> la= new ArrayList<String>();
+          la.add("Red");
+          la.add("Green");
+          la.add("Blue");
+          la.add("Yellow");
+          la.add("Black");
+ArrayList<String> la1= new ArrayList<String>();
+          la1.add("Red");
+          la1.add("Green");
+          la1.add("Blue");
+          la1.add("Yellow");
+ArrayList<String> la2 = new ArrayList<String>();
+          for (String e : la)
+             la2.add(la1.contains(e) ? "Yes" : "No");
+          System.out.println(la2);
+         
+     }
+}
+
+14. Write a Java program of swap two elements in an array list. 
+
+import java.util.ArrayList;
+import java.util.Collections;
+  public class swap {
+  public static void main(String[] args) {
+   ArrayList<String> l1= new ArrayList<String>();
+          l1.add("Red");
+          l1.add("Green");
+          l1.add("Black");
+          l1.add("White");
+          l1.add("Pink");
+
+          System.out.println("Array list before Swap:");
+          for(String a: l1){
+          System.out.println(a);
+        }
+          Collections.swap(l1, 0, 2);
+          System.out.println("Array list after swap:");
+          for(String b: l1){
+          System.out.println(b);
+         }
+     }
+}
+
+15. Write a Java program to join two array lists
+
+import java.util.ArrayList;
+import java.util.Collections;
+  public class JL {
+  public static void main(String[] args) {
+   ArrayList<String> l1= new ArrayList<String>();
+          l1.add("Red");
+          l1.add("Green");
+          l1.add("Black");
+          l1.add("White");
+          l1.add("Blue");
+          System.out.println("List of first array: " + l1);
+          ArrayList<String> l2= new ArrayList<String>();
+          l2.add("Red");
+          l2.add("Green");
+          l2.add("Black");
+          l2.add("Blue");
+          System.out.println("List of second array: " + l2);
+          ArrayList<String> a = new ArrayList<String>();
+          a.addAll(l1);
+          a.addAll(l2);
+        System.out.println("New array: " + a);
+        
+
+     }
+}
+
+16. Write a Java program to clone an array list to another array list.
+
+import java.util.ArrayList;
+import java.util.Collections;
+  public class Clone {
+  public static void main(String[] args) {
+          ArrayList<String> l1= new ArrayList<String>();
+          l1.add("Red");
+          l1.add("Green");
+          l1.add("Black");
+          l1.add("White");
+          l1.add("Pink");
+          System.out.println("Original array list: " + l1);
+          ArrayList<String> newl1 = (ArrayList<String>)l1.clone();
+          System.out.println("Cloned array list: " + l1);       
+}
+}
+
+17. Write a Java program to empty an array list.
+
+import java.util.ArrayList;
+import java.util.Collections;
+  public class ea {
+  public static void main(String[] args) {
+          ArrayList<String> l1= new ArrayList<String>();
+          l1.add("Red");
+          l1.add("Green");
+          l1.add("Black");
+          l1.add("White");
+          l1.add("Pink");
+          System.out.println("Original array list: " + l1);
+          l1.removeAll(l1);
+          System.out.println("Array list after remove all elements "+l1);   
+   }
+}
+
+18. Write a Java program to test an array list is empty or not.
+
+import java.util.ArrayList;
+import java.util.Collections;
+  public class en {
+  public static void main(String[] args) {
+          ArrayList<String> l1= new ArrayList<String>();
+          l1.add("Red");
+          l1.add("Green");
+          l1.add("Black");
+          l1.add("White");
+          l1.add("Pink");
+          System.out.println("Original array list: " + l1);
+          System.out.println("Checking the above array list is empty or not! "+l1.isEmpty());
+          l1.removeAll(l1);
+          System.out.println("Array list after remove all elements "+l1);   
+          System.out.println("Checking the above array list is empty or not! "+l1.isEmpty());
+   }
+}
+
+19. Write a Java program to trim the capacity of an array list the current list size. 
+
+import java.util.ArrayList;
+import java.util.Collections;
+  public class trim {
+  public static void main(String[] args) {
+          ArrayList<String> c1= new ArrayList<String>();
+          l1.add("Red");
+          l1.add("Green");
+          l1.add("Black");
+          l1.add("White");
+          l1.add("Pink");
+          System.out.println("Original array list: " + l1);
+          System.out.println("Let trim to size the above array: ");
+          l1.trimToSize();
+          System.out.println(l1);
+   }
+}
+
+20. Write a Java program to increase the size of an array list.
+
+import java.util.ArrayList;
+import java.util.Collections;
+  public class sa {
+  public static void main(String[] args) {
+          ArrayList<String> l1= new ArrayList<String>(3);
+          l1.add("Red");
+          l1.add("Yellow");
+          l1.add("Green");
+          System.out.println("Original array list: " + l1);
+          l1.ensureCapacity(6);
+          l1.add("Blue");
+          l1.add("Black");
+          l1.add("White");
+          System.out.println("New array list: " + l1);
+   }
+}
+
+21. Write a Java program to replace the second element of a ArrayList with the specified element. 
+
+import java.util.ArrayList;
+  public class se {
+    public static void main(String[] args){
+  ArrayList<String>  color = new ArrayList<String>();
+
+  color.add("Blue");
+  color.add("Yellow");
+
+  System.out.println("Original array list: " + color);
+  String new_color = "White";
+  color.set(1,new_color);
+
+  int num=color.size();
+  System.out.println("Replace second element with 'White'."); 
+  for(int i=0;i<num;i++)
+  System.out.println(color.get(i));
+  }
+}
+
+22. Write a Java program to print all the elements of a ArrayList using the position of the elements. 
+
+import java.util.ArrayList;
+  public class pe {
+    public static void main(String[] args) {
+  ArrayList <String> l1 = new ArrayList <String> ();
+  l1.add("Red");
+  l1.add("Green");
+  l1.add("Black");
+  l1.add("White");
+  l1.add("Pink");
+  System.out.println("\nOriginal array list: " + l1);
+  System.out.println("\nPrint using index of an element: ");
+  int no_of_elements = l1.size();
+  for (int index = 0; index < no_of_elements; index++)
+   System.out.println(l1.get(index));
+ }
 }
