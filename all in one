@@ -1,19 +1,15 @@
 Write a Java program to append the specified element to the end of a linked list.
 
 import java.util.LinkedList;
-  public class Exercise1 {
+  public class p {
   public static void main(String[] args) {
-     // create an empty linked list
-     LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
+   LinkedList<String> l_list = new LinkedList<String>();
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
           l_list.add("White");
           l_list.add("Pink");
           l_list.add("Yellow");
-	
-   // print the list
    System.out.println("The linked list: " + l_list);
    }
 }
@@ -21,17 +17,14 @@ import java.util.LinkedList;
 Write a Java program to iterate through all elements in a linked list.
 
 import java.util.LinkedList;
-  public class Exercise2 {
+  public class q {
   public static void main(String[] args) {
-    // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
           l_list.add("White");
           l_list.add("Pink");
-         // Print the linked list
   for (String element : l_list) {
     System.out.println(element);
     }
@@ -41,20 +34,16 @@ import java.util.LinkedList;
 Write a Java program to iterate through all elements in a linked list starting at the specified position.
 
 import java.util.Iterator;
-  public class Exercise3 {
+  public class r {
   public static void main(String[] args) {
-    // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
           l_list.add("White");
           l_list.add("Pink");
-// set Iterator at specified index
    Iterator p = l_list.listIterator(1);
 
-   // print list from second position
    while (p.hasNext()) {
    System.out.println(p.next());
    }
@@ -65,23 +54,19 @@ Write a Java program to iterate a linked list in reverse order.
 
 import java.util.LinkedList;
 import java.util.Iterator;
-  public class Exercise4 {
+  public class s {
   public static void main(String[] args) {
-    // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
           l_list.add("Pink");
           l_list.add("orange");
       
-        // print original list
    System.out.println("Original linked list:" + l_list);  
  
     Iterator it = l_list.descendingIterator();
 
-     // Print list elements in reverse order
      System.out.println("Elements in Reverse Order:");
      while (it.hasNext()) {
         System.out.println(it.next());
@@ -92,11 +77,9 @@ import java.util.Iterator;
 Write a Java program to insert the specified element at the specified position in the linked list.
 
 import java.util.LinkedList;
-public class Exercise5 {
+public class t {
 	public static void main(String[] args) {
-		// create an empty linked list
 		LinkedList <String> l_list = new LinkedList <String> ();
-		// use add() method to add values in the linked list
 		l_list.add("Red");
 		l_list.add("Green");
 		l_list.add("Black");
@@ -105,7 +88,6 @@ public class Exercise5 {
 		System.out.println("Original linked list: ");
 		System.out.println("Let add the Yellow color after the Red Color: " + l_list);
 		l_list.add(1, "Yellow");
-		// print the list
 		System.out.println("The linked list:" + l_list);
 	}
 }
@@ -113,19 +95,15 @@ public class Exercise5 {
 Write a Java program to insert elements into the linked list at the first and last position.
 
 import java.util.LinkedList;
-  public class Exercise6 {
+  public class u {
   public static void main(String[] args) {
-   // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
      System.out.println("Original linked list:" + l_list);    
-   // Add an element at the beginning 
     l_list.addFirst("White");
  
-   // Add an element at the end of list 
     l_list.addLast("Pink");
      System.out.println("Final linked list:" + l_list);  
  }
@@ -134,16 +112,13 @@ import java.util.LinkedList;
 Write a Java program to insert the specified element at the front of a linked list.
 
 import java.util.LinkedList;
-  public class Exercise7 {
+  public class v {
   public static void main(String[] args) {
-   // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
      System.out.println("Original linked list:" + l_list);    
-  // Add an element to front of LinkedList
      l_list.offerFirst("Pink");
      System.out.println("Final linked list:" + l_list);  
  }	
@@ -151,21 +126,14 @@ import java.util.LinkedList;
 
 Write a Java program to insert the specified element at the end of a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.LinkedList;
-  public class Exercise8 {
+  public class w {
   public static void main(String[] args) {
-   // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
      System.out.println("Original linked list:" + l_list);    
-  // Add an element at the end of a linked list
      l_list.offerLast("Pink");
      System.out.println("Final linked list:" + l_list);  
  }
@@ -173,64 +141,45 @@ import java.util.LinkedList;
 
 Write a Java program to insert some elements at the specified position into a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.LinkedList;
-public class Exercise9 {
+public class a {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> l_list = new LinkedList <String> ();
-  // use add() method to add values in the linked list
   l_list.add("Red");
   l_list.add("Green");
   l_list.add("Black");
 
-  // print original list
   System.out.println("Original linked list:" + l_list);
 
-  // create a new collection and add some elements
 
   LinkedList <String> new_l_list = new LinkedList <String> ();
   new_l_list.add("White");
   new_l_list.add("Pink");
 
-  // Add the collection in the second position of the existing linked list
   l_list.addAll(1, new_l_list);
 
-  // print the new list
   System.out.println("LinkedList:" + l_list);
  }
 }
 
 Write a Java program to get the first and last occurrence of the specified elements in a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.LinkedList;
 import java.util.Iterator;
-  public class Exercise10 {
+  public class b {
   public static void main(String[] args) {
-    // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
           l_list.add("Pink");
           l_list.add("orange");
       
-      // print original list
    System.out.println("Original linked list:" + l_list);  
  
-   // Find first element of the List
     Object first_element = l_list.getFirst();
     System.out.println("First Element is: "+first_element);
  
-    // Find last element of the List
     Object last_element = l_list.getLast();
     System.out.println("Last Element is: "+last_element);
  }
@@ -238,24 +187,17 @@ import java.util.Iterator;
 
 Write a Java program to display the elements and their positions in a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.LinkedList;
 import java.util.Iterator;
-  public class Exercise1 {
+  public class d {
   public static void main(String[] args) {
-    // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
           l_list.add("Pink");
           l_list.add("orange");
       
-      // print original list
    System.out.println("Original linked list:" + l_list);  
   for(int p=0; p < l_list.size(); p++)
    {
@@ -266,27 +208,19 @@ import java.util.Iterator;
 
 Write a Java program to remove a specified element from a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
 
-public class Exercise12 {
+public class e {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> l_list = new LinkedList <String> ();
-  // use add() method to add values in the linked list
   l_list.add("Red");
   l_list.add("Green");
   l_list.add("Black");
   l_list.add("Pink");
   l_list.add("orange");
 
-  // print the list
   System.out.println("The Original linked list: " + l_list);
 
-  // Remove the element in third position from the said linked list
   l_list.remove(2);
   System.out.println("The New linked list: " + l_list);
  }
@@ -294,31 +228,22 @@ public class Exercise12 {
 
 Write a Java program to remove first and last element from a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
 
-  public class Exercise13 {
+  public class f {
   public static void main(String[] args) {
-    // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
           l_list.add("Pink");
           l_list.add("orange");
       
-     // print the list
    System.out.println("The Original linked list: " + l_list);
 
-  // Remove the first element
     Object firstElement = l_list.removeFirst();
     System.out.println("Element removed: "+ firstElement);
  
-  // Remove the last element
     Object lastElement = l_list.removeLast();
     System.out.println("Element removed: "+ lastElement);
     System.out.println("The New linked list: " + l_list);
@@ -327,26 +252,18 @@ import java.util.*;
 
 Write a Java program to remove all the elements from a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
-  public class Exercise14 {
+  public class g {
   public static void main(String[] args) {
-    // create an empty linked list
      LinkedList<String> l_list = new LinkedList<String>();
-   // use add() method to add values in the linked list
           l_list.add("Red");
           l_list.add("Green");
           l_list.add("Black");
           l_list.add("Pink");
           l_list.add("orange");
       
-     // print the list
    System.out.println("The Original linked list: " + l_list);
 
-  // Removing all the elements from the linked list
     l_list.clear();
  
     System.out.println("The New linked list: " + l_list);
@@ -355,26 +272,18 @@ import java.util.*;
 
 Write a Java program of swap two elements in an linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
 
-public class Exercise15 {
+public class h {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> l_list = new LinkedList <String> ();
-  // use add() method to add values in the linked list
   l_list.add("Red");
   l_list.add("Green");
   l_list.add("Black");
   l_list.add("Pink");
   l_list.add("orange");
-  // print the list
   System.out.println("The Original linked list: " + l_list);
   
-   //Swapping 1st(index 0) element(Red) with the 3rd(index 2) element (Black)
     Collections.swap(l_list, 0, 2);
     System.out.println("The New linked list after swap: " + l_list);
  }
@@ -382,23 +291,16 @@ public class Exercise15 {
 
 Write a Java program to shuffle the elements in a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
 
-public class Exercise16 {
+public class j {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> l_list = new LinkedList <String> ();
-  // use add() method to add values in the linked list
   l_list.add("Red");
   l_list.add("Green");
   l_list.add("Black");
   l_list.add("Pink");
   l_list.add("orange");
-  // print the list
   System.out.println("Linked list before shuffling:\n" + l_list);  
   Collections.shuffle(l_list);
   System.out.println("Linked list after shuffling:\n" + l_list); 
@@ -407,14 +309,9 @@ public class Exercise16 {
 
 Write a Java program to join two linked lists.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
-public class Exercise17 {
+public class l {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> c1 = new LinkedList <String> ();
   
           c1.add("Red");
@@ -430,7 +327,6 @@ public class Exercise17 {
           c2.add("Pink");
           System.out.println("List of second linked list: " + c2);
         
-      // Let join above two list
         LinkedList <String> a = new LinkedList <String> ();
         a.addAll(c1);
         a.addAll(c2);
@@ -440,16 +336,11 @@ public class Exercise17 {
 
 Write a Java program to clone an linked list to another linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
-public class Exercise18 {
+public class k {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> c1 = new LinkedList <String> ();
-            c1.add("Red");
+          c1.add("Red");
           c1.add("Green");
           c1.add("Black");
           c1.add("White");
@@ -463,16 +354,11 @@ public class Exercise18 {
 
 Write a Java program to remove and return the first element of a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
-public class Exercise19 {
+public class l {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> c1 = new LinkedList <String> ();
-            c1.add("Red");
+          c1.add("Red");
           c1.add("Green");
           c1.add("Black");
           c1.add("White");
@@ -487,15 +373,10 @@ public class Exercise19 {
 
 Write a Java program to retrieve but does not remove, the first element of a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
 
-public class Exercise20 {
+public class m {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> c1 = new LinkedList <String> ();
             c1.add("Red");
           c1.add("Green");
@@ -503,7 +384,6 @@ public class Exercise20 {
           c1.add("White");
           c1.add("Pink");
           System.out.println("Original linked list: " + c1); 
-     // Retrieve but does not remove, the first element of a linked list
     String x = c1.peekFirst();
     System.out.println("First element in the list: " + x);
     System.out.println("Original linked list: " + c1);   
@@ -512,23 +392,17 @@ public class Exercise20 {
 
 Write a Java program to retrieve but does not remove, the last element of a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
 
-public class Exercise21 {
+public class n {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> c1 = new LinkedList <String> ();
-            c1.add("Red");
+          c1.add("Red");
           c1.add("Green");
           c1.add("Black");
           c1.add("White");
           c1.add("Pink");
           System.out.println("Original linked list: " + c1);    
-     // Retrieve but does not remove, the last element of a linked list
         String x = c1.peekLast();
     System.out.println("Last element in the list: " + x);
     System.out.println("Original linked list: " + c1);
@@ -538,14 +412,9 @@ public class Exercise21 {
 
 Write a Java program to check if a particular element exists in a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
-public class Exercise22 {
+public class p {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> c1 = new LinkedList <String> ();
             c1.add("Red");
           c1.add("Green");
@@ -554,14 +423,12 @@ public class Exercise22 {
           c1.add("Pink");
           System.out.println("Original linked list: " + c1);
            
-     // Checks whether the color "Green" exists or not.
     if (c1.contains("Green")) {
        System.out.println("Color Green is present in the linked list.");
     } else {
        System.out.println("Color Green is not present in the linked list.");
      }
     
-     // Checks whether the color "Orange" exists or not.
     if (c1.contains("Orange")) {
        System.out.println("Color Orange is present in the linked list.");
     } else {
@@ -573,15 +440,10 @@ public class Exercise22 {
 
 Write a Java program to convert a linked list to array list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
 
-public class Exercise23 {
+public class a {
  public static void main(String[] args) {
-  // create an empty linked list
   LinkedList <String> linked_list = new LinkedList <String> ();
             linked_list.add("Red");
           linked_list.add("Green");
@@ -590,7 +452,6 @@ public class Exercise23 {
           linked_list.add("Pink");
           System.out.println("Original linked list: " + linked_list);
    
-      //Convert a linked list to array list    
      List<String> list = new ArrayList<String>(linked_list);
 
     for (String str : list){
@@ -602,12 +463,8 @@ public class Exercise23 {
 
 Write a Java program to compare two linked lists.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.*;
-  public class Exercise24 {
+  public class b {
   public static void main(String[] args) {
    LinkedList<String> c1= new LinkedList<String>();
           c1.add("Red");
@@ -622,7 +479,6 @@ import java.util.*;
           c2.add("Black");
           c2.add("Orange");
 
-          //comparison output in linked list
           LinkedList<String> c3 = new LinkedList<String>();
           for (String e : c1)
              c3.add(c2.contains(e) ? "Yes" : "No");
@@ -632,13 +488,9 @@ import java.util.*;
 
 Write a Java program to test an linked list is empty or not.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.LinkedList;
 import java.util.Collections;
-  public class Exercise25 {
+  public class c {
   public static void main(String[] args) {
           LinkedList<String> c1= new LinkedList<String>();
           c1.add("Red");
@@ -656,13 +508,9 @@ import java.util.Collections;
 
 Write a Java program to replace an element in a linked list.
 
-Sample Solution:-
-
-Java Code:
-
 import java.util.LinkedList;
 import java.util.Collections;
-  public class Exercise18 {
+  public class d {
   public static void main(String[] args) {
           LinkedList<String> c1= new LinkedList<String>();
           c1.add("Red");
@@ -671,7 +519,6 @@ import java.util.Collections;
           c1.add("White");
           c1.add("Pink");
           System.out.println("Original linked list: " + c1);
-          // Replacing 2nd element with new value
           c1.set(1, "Orange");
           System.out.println("The value of second element changed.");
           System.out.println("New linked list: " + c1);
@@ -686,16 +533,10 @@ import java.util.Collections;
 
 Write a Java program to append the specified element to the end of a hash set.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.HashSet;
-  public class Exercise1 {
+  public class a {
   public static void main(String[] args) {
-     // Create a empty hash set
      HashSet<String> h_set = new HashSet<String>();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -703,24 +544,17 @@ import java.util.HashSet;
           h_set.add("Pink");
           h_set.add("Yellow");
 
-   // print the hash set
    System.out.println("The Hash Set: " + h_set);
    }
 }
 
 Write a Java program to iterate through all elements in a hash list.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
 import java.util.Iterator;
-  public class Exercise2 {
+  public class b {
   public static void main(String[] args) {
-         // Create a empty hash set
      HashSet<String> h_set = new HashSet<String>();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -728,9 +562,7 @@ import java.util.Iterator;
           h_set.add("Pink");
           h_set.add("Yellow");
 
-  // set Iterator 
     Iterator<String> p = h_set.iterator();
-  // Iterate the hash set
    while (p.hasNext()) {
    System.out.println(p.next());
    }
@@ -739,17 +571,11 @@ import java.util.Iterator;
 
 Write a Java program to get the number of elements in a hash set.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
 import java.util.Iterator;
-  public class Exercise3 {
+  public class e {
   public static void main(String[] args) {
-         // Create a empty hash set
      HashSet<String> h_set = new HashSet<String>();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -763,17 +589,11 @@ import java.util.Iterator;
 
 Write a Java program to empty an hash set.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
 
-  public class Exercise4 {
+  public class f {
   public static void main(String[] args) {
-         // Create a empty hash set
      HashSet<String> h_set = new HashSet<String>();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -781,7 +601,6 @@ import java.util.*;
           h_set.add("Pink");
           h_set.add("Yellow");
     System.out.println("Original Hash Set: " + h_set);
-    // Remove all elements
     h_set.removeAll(h_set);
     System.out.println("Hash Set after removing all the elements "+h_set);   
    }
@@ -790,17 +609,11 @@ import java.util.*;
 
 Write a Java program to test a hash set is empty or not.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
 
-  public class Exercise5 {
+  public class g {
   public static void main(String[] args) {
-         // Create a empty hash set
      HashSet<String> h_set = new HashSet();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -817,17 +630,11 @@ import java.util.*;
 
 Write a Java program to clone a hash set to another hash set.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
 
-  public class Exercise6 {
+  public class h {
   public static void main(String[] args) {
-         // Create a empty hash set
      HashSet<String> h_set = new HashSet<String>();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -843,16 +650,10 @@ import java.util.*;
 
 Write a Java program to convert a hash set to an array.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
-  public class Exercise7 {
+  public class i {
   public static void main(String[] args) {
-         // Create a empty hash set
      HashSet<String> h_set = new HashSet<String>();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -860,11 +661,9 @@ import java.util.*;
           h_set.add("Pink");
           h_set.add("Yellow");
       System.out.println("Original Hash Set: " + h_set);
-      // Creating an Array
       String[] new_array = new String[h_set.size()];
       h_set.toArray(new_array);
  
-     // Displaying Array elements
      System.out.println("Array elements: ");
       for(String element : new_array){
         System.out.println(element);
@@ -874,16 +673,10 @@ import java.util.*;
 
 Write a Java program to convert a hash set to a tree set.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
-  public class Exercise8 {
+  public class k {
   public static void main(String[] args) {
-         // Create a empty hash set
      HashSet<String> h_set = new HashSet<String>();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -892,10 +685,8 @@ import java.util.*;
           h_set.add("Yellow");
       System.out.println("Original Hash Set: " + h_set);
     
-     // Creat a TreeSet of HashSet elements
      Set<String> tree_set = new TreeSet<String>(h_set);
  
-     // Display TreeSet elements
      System.out.println("TreeSet elements: ");
      for(String element : tree_set){
         System.out.println(element);
@@ -905,17 +696,11 @@ import java.util.*;
 
 Write a Java program to convert a hash set to a List/ArrayList.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
 
-  public class Exercise9 {
+  public class l {
   public static void main(String[] args) {
-         // Create a empty hash set
      HashSet<String> h_set = new HashSet<String>();
-   // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -924,26 +709,18 @@ import java.util.*;
           h_set.add("Yellow");
       System.out.println("Original Hash Set: " + h_set);
     
-    // Create a List from HashSet elements
      List<String> list = new ArrayList<String>(h_set);
  
-     // Display ArrayList elements
      System.out.println("ArrayList contains: "+ list);
   }
 }
 
 Write a Java program to compare two hash sets.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
-  public class Exercise10 {
+  public class m {
   public static void main(String[] args) {
-     // Create a empty hash set
         HashSet<String> h_set = new HashSet<String>();
-     // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
@@ -954,7 +731,6 @@ import java.util.*;
           h_set2.add("Pink");
           h_set2.add("Black");
           h_set2.add("Orange");
-          //comparison output in hash set
           HashSet<String>result_set = new HashSet<String>();
          for (String element : h_set){
              System.out.println(h_set2.contains(element) ? "Yes" : "No");
@@ -963,26 +739,12 @@ import java.util.*;
 }
 
 
-
-Inviting useful, relevant, well-written and unique guest posts.
-	
-
-Java Collection, HashSet Exercises: Compare two sets and retain elements which are same on both sets
-Last update on November 16 2019 12:57:48 (UTC/GMT +8 hours)
-Java Collection, HashSet Exercises: Exercise-11 with Solution
-
 Write a Java program to compare two sets and retain elements which are same on both sets.
 
-Sample Solution:
-
-Java Code:
-
 import java.util.*;
-  public class Exercise11 {
+  public class n {
   public static void main(String[] args) {
-     // Create a empty hash set
         HashSet<String> h_set1 = new HashSet<String>();
-     // use add() method to add values in the hash set
           h_set1.add("Red");
           h_set1.add("Green");
           h_set1.add("Black");
@@ -1008,24 +770,21 @@ Sample Solution:
 Java Code:
 
 import java.util.*;
-  public class Exercise12 {
+  public class p {
   public static void main(String[] args) {
-     // Create a empty hash set
         HashSet<String> h_set = new HashSet<String>();
-     // use add() method to add values in the hash set
           h_set.add("Red");
           h_set.add("Green");
           h_set.add("Black");
           h_set.add("White");
            System.out.println("Original hash set contains: "+ h_set);
-      //  clear() method removes all the elements from a hash set
-      // and the set becomes empty.
           h_set.clear();
  
-     // Display original hash set content again
           System.out.println("HashSet content: "+h_set);
      }
 }
+
+
 
 TreeSet Exercises
 
